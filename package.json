@@ -1,0 +1,27 @@
+{
+  "name": "draggable",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.0.18",
+    "three": "^0.150.1",
+    "virtual-scroll": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.149.0",
+    "@types/virtual-scroll": "^2.0.1",
+    "autoprefixer": "^10.4.14",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
+    "ress": "^5.0.2",
+    "sass": "^1.58.3",
+    "vite-plugin-glsl": "^1.1.2"
+  }
+}

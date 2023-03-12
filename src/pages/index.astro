@@ -1,0 +1,26 @@
+---
+import CanvasContainer from '../components/CanvasContainer.astro'
+import Layout from '../components/Layout.astro'
+import Link from '../components/Link.astro'
+import MouseStalker from '../components/MouseStalker.astro'
+---
+
+<Layout title="Demo">
+  <main>
+    <CanvasContainer />
+    <Link class="link" href="https://github.com/nemutas/draggable" target="_blank" rel="noopener noreferrer">Github</Link>
+    <MouseStalker />
+  </main>
+</Layout>
+
+<style lang="scss">
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .link {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+  }
+</style>
