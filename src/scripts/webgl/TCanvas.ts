@@ -106,7 +106,12 @@ export class TCanvas {
       fragmentShader,
     })
 
-    const textures = Object.values(this.assets).map((val) => val.data as THREE.Texture)
+    const textures = Object.values(this.assets).map((val) => {
+      const texture = val.data as THREE.Texture
+      texture.wrapS = THREE.MirroredRepeatWrapping
+      texture.wrapT = THREE.MirroredRepeatWrapping
+      return texture
+    })
 
     const centerX = ((width + gap) * (col - 1)) / 2
     const centerY = ((height + gap) * (row - 1)) / 2
